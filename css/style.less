@@ -1,6 +1,11 @@
+@orange-color: #fdbd1f;
+@grey-color: #9e8e92;
+
 body {
-  background: url(../img/jorep7sum.jpg) no-repeat;
+  background: url(../img/jorepsum.jpg) no-repeat;
   width: 1170px;
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .clearfix::after {
@@ -11,17 +16,56 @@ body {
 
 .navigation-logo {
   float: left;
+  margin-top: 24px;
+  margin-left: 26px;
+  
+  .logo-tagline {
+    float: right;
+    margin-left: 9px;
+    color: @grey-color;
+    
+    .tagline-black {
+      font-weight: bold;
+      font-size: 19px;
+      
+    }
+    
+    .tagline-light {
+      display: inline-block;
+      margin-top: -10px;
+      font-weight: lighter;
+      font-size: 13px;
+    }
+  }
 }
 
 .main-navigation {
   float: right;
   
-  li {
-    display: inline-block;
+  ul {
+    
+    li {
+      display: inline-block;
+      padding-top: 15px;
+      padding-right: 29px;
+      
+      a {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: @grey-color;
+      }
+    }
   }
 }
 
 .index-logo {
+  margin-top: 15px;
+  width: 1170px;
+  height: 441px;
+  background: url(../img/banner.jpg) no-repeat 0px 0px;
   h1 {
     text-align: center;
     margin-top: 190px;
@@ -72,3 +116,4 @@ body {
   margin-top: 130px;
   text-align: center;
 }
+
