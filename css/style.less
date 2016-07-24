@@ -1,8 +1,9 @@
 @orange-color: #fdbd1f;
 @grey-color: #9e8e92;
+@purple-color: #ab6f80;
 
 body {
-  background: url(../img/jorepsum.jpg) no-repeat;
+  background: url(../img/jo0repsum.jpg) no-repeat;
   width: 1170px;
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -27,7 +28,6 @@ body {
     .tagline-black {
       font-weight: bold;
       font-size: 19px;
-      
     }
     
     .tagline-light {
@@ -47,7 +47,7 @@ body {
     li {
       display: inline-block;
       padding-top: 15px;
-      padding-right: 29px;
+      padding-right: 42px;
       
       a {
         font-weight: normal;
@@ -58,25 +58,89 @@ body {
         color: @grey-color;
       }
     }
+    
+    li:last-child {
+      display: inline-block;
+      padding-right: 29px;
+    }
   }
 }
 
 .index-logo {
-  margin-top: 15px;
   width: 1170px;
   height: 441px;
+  margin-top: 15px;
+  margin-bottom: 0px;
   background: url(../img/banner.jpg) no-repeat 0px 0px;
+  
+  
   h1 {
     text-align: center;
-    margin-top: 190px;
+    font-size: 31px;
+    font-weight: bold;
+    letter-spacing: 2.4px;
+    color: #fff;
+    background: @purple-color;
+  }
+  
+  .logo-tagline-1 {
+    width: 224px;
+    padding: 7px 0px;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+  
+  .logo-tagline-2 {
+    width: 510px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 0;
   }
 }
 
 .description {
-  width: 570px;
   margin: 0 auto;
-  margin-top: 230px;
+  padding-bottom: 60px;
+  background: @orange-color;
+  color: #fff;
   text-align: center;
+  
+  h2 {
+    display: inline-block;
+    margin-top: 47px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  p {
+    display: block;
+    width: 581px;
+    margin-top: -12px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  
+  .button-description {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-right: 8px;
+    padding: 9px 22px;
+    font-size: 20px;
+    font-weight: bold;
+    color: @orange-color;
+    background: @purple-color;
+    border-radius: 3px;
+  }
+  
+  .button-description:last-child {
+    padding: 9px 28px;
+  }
 }
 
 .features-item {
@@ -116,4 +180,3 @@ body {
   margin-top: 130px;
   text-align: center;
 }
-
