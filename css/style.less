@@ -3,7 +3,6 @@
 @purple-color: #ab6f80;
 
 body {
-  background: url(../img/jorepsum.jpg) no-repeat;
   width: 1170px;
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -317,6 +316,7 @@ body {
 }
 
 .features-item-bottom {
+  position: relative;
   width: 770px;
   margin: 0 auto;
   text-align: center;
@@ -347,11 +347,46 @@ body {
     line-height: 22px;
     font-weight: normal;
     color: #978489;
+  }
 
+  img {
+    margin-top: 20px;
+  }
+
+  .button-prev {
+    img {
+      position: absolute;
+      left: 87px;
+      top: 272px;
+      x: ;
+    }
+  }
+  
+  .button-next {
+    img {
+      position: absolute;
+      left: 655px;
+      top: 274px;
+    }
   }
 }
 
 .main-footer {
-  margin-top: 130px;
+  margin-top: 103px;
+  margin-bottom: 49px;
   text-align: center;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 26px;
+  background: #f0f0f0;
+  
+  .dark {
+    color: #978489;
+  }
+  
+  .light {
+    color: @purple-color;
+  }
 }
+
+
