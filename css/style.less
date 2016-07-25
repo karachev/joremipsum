@@ -4,7 +4,7 @@
 
 body {
   width: 1170px;
-  margin: 0px;
+  margin: 0px auto;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -21,7 +21,8 @@ body {
   
   .logo-tagline {
     float: right;
-    margin-left: 9px;
+    margin-left: 13px;
+    margin-top: -4px;
     color: @grey-color;
     
     .tagline-black {
@@ -31,7 +32,6 @@ body {
     
     .tagline-light {
       display: inline-block;
-      margin-top: -10px;
       font-weight: lighter;
       font-size: 13px;
     }
@@ -42,7 +42,6 @@ body {
   float: right;
   
   ul {
-    
     li {
       display: inline-block;
       padding-top: 15px;
@@ -58,9 +57,23 @@ body {
       }
     }
     
+    li:first-child {
+      display: inline-block;
+      padding-right: 20px;
+    }
+    
     li:last-child {
       display: inline-block;
       padding-right: 29px;
+    }
+
+    .active {
+      padding-top: 40px;
+      padding-left: 25px;
+      padding-bottom: 30px;
+      padding-right: 17px;
+      background: @orange-color;
+      color: #fff;
     }
   }
 }
@@ -134,10 +147,17 @@ body {
     color: @orange-color;
     background: @purple-color;
     border-radius: 3px;
+    cursor: pointer;
   }
   
   .button-description:last-child {
     padding: 9px 28px;
+  }
+
+  .button-description:hover {
+    color: @purple-color;
+    background: @orange-color;
+    border: 1px solid @purple-color;
   }
 }
 
@@ -147,7 +167,6 @@ body {
     width: 584px;
     padding-top: 51px;
     border-right: 1px solid #e2e2df;
-    
     
     .item-left-pic {
       float: left;
@@ -197,6 +216,13 @@ body {
         color: #fff;
         background: @orange-color;
         border-radius: 3px;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: @orange-color;
+        background: #fff;
+        border: 1px solid @orange-color; 
       }
     }
   }
@@ -205,7 +231,6 @@ body {
     float: right;
     width: 576px;
     padding-top: 50px;
-
     
     .item-right-pic {
       float: left;
@@ -255,15 +280,22 @@ body {
         color: #fff;
         background: @orange-color;
         border-radius: 3px;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: @orange-color;
+        background: #fff;
+        border: 1px solid @orange-color; 
       }
     }
   }
   
   .item-middle {
     margin-top: 59px;
-    margin-bottom: 55px;
     clear: both;
     background: @purple-color;
+    padding-bottom: 55px;
     
     .middle-pic {
       float: left;
@@ -274,14 +306,14 @@ body {
     .middle-description {
       float: right;
       width: 730px;
-      margin-right: 50px;
       margin-top: 30px;
+      margin-right: 50px;
 
       h3 {
+        margin-bottom: 0px;
         font-size: 24px;
         font-weight: bold;
         color: #fff;
-        margin-bottom: 0px;
       }
 
       h4 {
@@ -293,7 +325,7 @@ body {
       }
 
       p {
-        margin-top: 16px;
+        margin-top: 18px;
         font-size: 15px;
         font-weight: normal;;
         line-height: 22px;
@@ -303,13 +335,20 @@ body {
       a {
         display: inline-block;;
         margin-top: 12px;
+        padding: 3px 13px;
         font-size: 16px;
         font-weight: bold;
         line-height: 22px;
         color: @purple-color;
-        padding: 3px 13px;
         background: #ffffff;
         border-radius: 3px;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: #ffffff;
+        background: @purple-color;
+        border: 1px solid #fff;
       }
     }
   }
@@ -336,7 +375,6 @@ body {
     font-size: 20px;
     font-weight: lighter;
     color: @orange-color;
-
   }
 
   p {
@@ -358,7 +396,7 @@ body {
       position: absolute;
       left: 87px;
       top: 272px;
-      x: ;
+      cursor: pointer;
     }
   }
   
@@ -367,13 +405,14 @@ body {
       position: absolute;
       left: 655px;
       top: 274px;
+      cursor: pointer;
     }
   }
 }
 
 .main-footer {
-  margin-top: 103px;
-  margin-bottom: 49px;
+  margin-top: 60px;
+  padding: 60px 0;
   text-align: center;
   font-size: 15px;
   font-weight: normal;
@@ -387,6 +426,8 @@ body {
   .light {
     color: @purple-color;
   }
+
+  .container {
+    margin-top: -16px;
+  }
 }
-
-
